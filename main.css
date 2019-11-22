@@ -1,0 +1,118 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.gameInfos__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.gameInfos__hidden {
+    visibility: hidden;
+}
+
+.gameInformations {
+    display: inline-block;
+    border: 2px solid blue;
+    padding: 5px 11px;
+    border-radius: 50px;
+    color: blue;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.gameInfos__container::before {
+    content: '';
+    background: #000000;
+    opacity: .6;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.gameInfos__text {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px 24px;
+    z-index: 20;
+    width: 60%;
+}
+
+.gameInfos__container button {
+    background: red;
+    padding: 10px 20px;
+    border: none;
+    color: #ffffff;
+}
+
+.gameUI {
+    z-index: 9;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gameEnd {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.gameEnd::before {
+    content: '';
+    background: #000000;
+    opacity: .6;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.gameEnd__hidden {
+    visibility: hidden;
+    transform: translateX(-100%);
+}
+
+.gameEnd__text {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px 24px;
+    z-index: 20;
+    width: 60%;
+}
+
+.pointTouch {
+    background: blue;
+    border-radius: 25px;
+    position: absolute;
+    display: inline-block;
+}
+
+.random {
+    width: 25px;
+    height: 25px;
+    background: red;
+    border-radius: 25px;
+    position: absolute;
+    display: inline-block;
+}
